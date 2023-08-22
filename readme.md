@@ -7,11 +7,12 @@ Official implementation of **IT3D: Improved Text-to-3D Generation with Explicit 
 https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/e1d05536-67bd-4ef7-8440-8ed39e5bd8f8
 
 
+<details open>
+  <summary>More Videos</summary>
+  https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/ed27802f-f2fe-4b10-af33-61e90f74fac8
+  https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/437d7242-b8c7-4ee7-a92c-1f3627a3d9dc
+</details>
 
-https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/ed27802f-f2fe-4b10-af33-61e90f74fac8
-
-
-https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/437d7242-b8c7-4ee7-a92c-1f3627a3d9dc
 
 
 
