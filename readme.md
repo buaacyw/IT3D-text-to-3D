@@ -12,29 +12,9 @@ Recent strides in Text-to-3D techniques have been propelled by distilling knowle
 
 ### Left: Coarse Model (Baseline). Right: Refined Model (Ours). File Name: Prompt
 
-https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/e1d05536-67bd-4ef7-8440-8ed39e5bd8f8
 
 
-https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/4294ae3d-9248-4fa8-88c0-8a119ea8932d
-
-
-
-
-
-https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/90e7dcd1-7c87-43a1-8367-38ca55998231
-
-
-
-https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/fcc9a4a5-3a40-4468-94fe-5da4f6c67f9c
-
-
-
-
-https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/c053a4e5-763a-4b94-a104-0961d40cfdb2
-
-
-https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/5dd56968-da1b-42a4-8684-303b6abfd8ea
-
+https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/129b0f63-695b-4dee-9396-b3c8d531c577
 
 
 
@@ -62,6 +42,31 @@ https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/5dd56968-da1b-42a4-86
   https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/83a89e36-5cc3-4fd8-82d9-da48a6e41e38
   
   https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/3d30ea64-1211-4b79-94c9-475089dc811c
+
+  https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/e1d05536-67bd-4ef7-8440-8ed39e5bd8f8
+  
+  
+  https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/4294ae3d-9248-4fa8-88c0-8a119ea8932d
+  
+  
+  
+  
+  
+  https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/90e7dcd1-7c87-43a1-8367-38ca55998231
+  
+  
+  
+  https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/fcc9a4a5-3a40-4468-94fe-5da4f6c67f9c
+  
+  
+  
+  
+  https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/c053a4e5-763a-4b94-a104-0961d40cfdb2
+  
+  
+  https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/5dd56968-da1b-42a4-8684-303b6abfd8ea
+  
+
 
 
 </details>
