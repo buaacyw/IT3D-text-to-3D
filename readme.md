@@ -1,16 +1,69 @@
-# IT3D
+# Official repo for IT3D
 
-Official implementation of **IT3D: Improved Text-to-3D Generation with Explicit View Synthesis**.
+**IT3D: Improved Text-to-3D Generation with Explicit View Synthesis**.
 
+Yiwen Chen, Chi Zhang, Xiaofeng Yang, Zhongang Cai, Gang Yu, Lei Yang, Guosheng Lin
 
+[Arxiv]
+
+## Abstract
+
+Recent strides in Text-to-3D techniques have been propelled by distilling knowledge from powerful large text-to-image diffusion models (LDMs). Nonetheless, existing Text-to-3D approaches often grapple with challenges such as over-saturation, inadequate detailing, and unrealistic outputs. This study presents a novel strategy that leverages explicitly synthesized multi-view images to address these issues. Our approach involves the utilization of image-to-image pipelines, empowered by LDMs, to generate posed high-quality images based on the renderings of coarse 3D models. Although the generated images mostly alleviate the aforementioned issues, challenges such as view inconsistency and significant content variance persist due to the inherent generative nature of large diffusion models, posing extensive difficulties in leveraging these images effectively. To overcome this hurdle, we advocate integrating a discriminator alongside a novel Diffusion-GAN dual training strategy to guide the training of 3D models. For the incorporated discriminator, the synthesized multi-view images are considered real data, while the renderings of the optimized 3D models function as fake data. We conduct a comprehensive set of experiments that demonstrate the effectiveness of our method over baseline approaches.
+
+### Left: Coarse Model (Baseline). Right: Refined Model (Ours). File Name: Prompt
 
 https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/e1d05536-67bd-4ef7-8440-8ed39e5bd8f8
 
 
-<details open>
+https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/4294ae3d-9248-4fa8-88c0-8a119ea8932d
+
+
+
+
+
+https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/90e7dcd1-7c87-43a1-8367-38ca55998231
+
+
+
+https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/fcc9a4a5-3a40-4468-94fe-5da4f6c67f9c
+
+
+
+
+https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/c053a4e5-763a-4b94-a104-0961d40cfdb2
+
+
+https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/5dd56968-da1b-42a4-8684-303b6abfd8ea
+
+
+
+
+
+
+
+
+
+
+
+# Demos
+<details close>
   <summary>More Videos</summary>
+
+  https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/5dc67170-c515-4287-b38a-62d15e11c73e
+
+  https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/c55486cf-cb97-4542-9f80-f93632ae6387
+
+
+  https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/ca1f1af2-d9e8-4967-8c58-d7990451df03
+
+  
   https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/ed27802f-f2fe-4b10-af33-61e90f74fac8
-  https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/437d7242-b8c7-4ee7-a92c-1f3627a3d9dc
+
+  https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/83a89e36-5cc3-4fd8-82d9-da48a6e41e38
+  
+  https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/3d30ea64-1211-4b79-94c9-475089dc811c
+
+
 </details>
 
 
