@@ -102,9 +102,9 @@ Additionally, You need to download Stable Diffusion 1.5 model [`v1-5-pruned.ckpt
 
 ### Tips for OOM
 All our demos (coarse models and fine models) are trained in 512 resolution.
-In 512 resolution, it takes around 30G for training a coarse model (vanilla Stable Dreamfusion)  and 35G for refining it with IT3D
+In 512 resolution, it takes around 30G for training a coarse model (vanilla Stable Dreamfusion)  and 35G for refining it with IT3D.
 You may lower the memory consumption by:
-* Lower training resolution by setting `--h` and `--w`. While this will significantly reduce memory usage, it will also lead to a substantial decrease in performance. Our default setting is `--h 512 --w 512`.
+* Lower training resolution by setting `--h` and `--w`. While this will significantly reduce memory usage, it will also lead to a substantial decrease in performance. It takes about 10G for IT3D in 64 resolution.
 * Use lightweight NeRF by setting `--nerf l1`. Our default setting is `--nerf l2`.
 * Lower sampling steps per ray by setting `--max_steps`. Our default setting is `--max_steps 384`
 * If you OOM during Controlnet data generation, lower `--ctn_sample_batch_size`.
