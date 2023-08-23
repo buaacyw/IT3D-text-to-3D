@@ -2,7 +2,7 @@
 
 **IT3D: Improved Text-to-3D Generation with Explicit View Synthesis**.
 
-Yiwen Chen, Chi Zhang, Xiaofeng Yang, Zhongang Cai, Gang Yu, Lei Yang, Guosheng Lin
+[Yiwen Chen](https://buaacyw.github.io/), [Chi Zhang](https://icoz69.github.io/), Xiaofeng Yang, [Zhongang Cai](https://caizhongang.github.io/), [Gang Yu](https://www.skicyyu.org/), [Lei Yang](https://scholar.google.com.hk/citations?user=jZH2IPYAAAAJ&hl=en), [Guosheng Lin](https://guosheng.github.io/)
 
 [Arxiv](https://arxiv.org/abs/2308.11473)
 
