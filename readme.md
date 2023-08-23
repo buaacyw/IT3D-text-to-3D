@@ -120,7 +120,6 @@ We release our [coarse model checkpoints](https://drive.google.com/file/d/1juXz2
 Unzip into folder `ckpts`. All these checkpoints are trained in our default coarse model setting.
 
 # Usage
-Check scripts in folder `scripts`.
 On our A6000, it takes 6 minutes to generate a dataset of 640 images using SD-I2I, and 25 minutes using Controlnet, respectively.
 
 ```bash
