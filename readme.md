@@ -112,6 +112,8 @@ You may lower the memory consumption by:
 ### Tips for Performance
 * Change prompt and seed by setting `--text` and `--seed`. Sadly, training a coarse model free from the Janus problem often requires multiple attempts.
 * Rendering NeRF as latent feature at the early stage of coarse model training by setting `--latent_iter_ratio 0.1`.
+* Change the discrimination loss `--g_loss_weight`. You need to lower `--g_loss_weight` when the generated dataset is too various. You may enlarge `--g_loss_weight` for high quality dataset.
+* Tune the GAN longer will increase quality. Change `--g_loss_decay_begin_step` and `--g_loss_decay_step`. In our default setting, we tune the GAN for 7500 steps and then discard it.
 
 ### Download coarse model checkpoints
 We release our [coarse model checkpoints](https://drive.google.com/file/d/1juXz2qVLipriaEoUxZjQwOGahXm6IyZd/view). 
@@ -119,6 +121,7 @@ Unzip into folder `ckpts`. All these checkpoints are trained in our default coar
 
 # Usage
 Check scripts in folder `scripts`.
+On our A6000, it takes 6 minutes to generate a dataset of 640 images using SD-I2I, and 25 minutes using Controlnet, respectively.
 
 ```bash
 
@@ -130,6 +133,9 @@ Check scripts in folder `scripts`.
 # Jasmine
 python main.py -O --text "a bunch of white jasmine" --workspace jas_ctn --ckpt ckpts/jas_df_ep0200.pth --no_cam_D --gan --ctn --g_loss_decay_begin_step 25000 --real_save_path generated_dataset/jas_ctn
 
+# Use stable diffusion img2img pipeline instead of Controlnet
+python main.py -O --text "a bunch of white jasmine" --workspace jas_sd --ckpt ckpts/jas_df_ep0200.pth --no_cam_D --gan  --g_loss_decay_begin_step 25000 --real_save_path generated_dataset/jas_sd
+
 # Iron Man
 python main.py -O --text "a 3D model of an iron man, highly detailed, full body" --workspace iron_ctn --ckpt ckpts/iron_man_df_ep0400.pth --no_cam_D --gan --ctn --g_loss_decay_begin_step 45000 --real_save_path generated_dataset/iron_ctn
 
@@ -138,6 +144,17 @@ python main.py -O --text "Full-body 3D model of Darth Vader, highly detailed" --
 
 # Hulk
 python main.py -O --text "3D model of hulk, highly detailed" --workspace hulk_ctn --ckpt ckpts/hulk_df_ep0200.pth --no_cam_D --gan --ctn  --g_loss_decay_begin_step 25000 --real_save_path generated_dataset/hulk_ctn
+
+# Ablation Experiment in Paper
+# Note: our default setting is sds loss + decayed gan loss. gan loss weight will be decayed to zero after 7500 steps (depending on g_loss_decay_begin_step)
+# only l2 loss
+python main.py -O --text "3D model of hulk, highly detailed" --workspace hulk_ctn_l2 --ckpt ckpts/hulk_df_ep0200.pth --no_cam_D --gan --ctn --l2_weight 100.0 --l2_decay_begin_step 25000 --l2_decay_step 2500 --l2_weight_end 0.0 --sds_weight_end 0.0 --g_loss_decay_begin_step 0 --real_save_path generated_dataset/hulk_ctn
+
+# l2 loss + sds loss
+python main.py -O --text "3D model of hulk, highly detailed" --workspace hulk_ctn_l2_sds --ckpt ckpts/hulk_df_ep0200.pth --no_cam_D --gan --ctn --l2_weight 100.0 --l2_decay_begin_step 25000 --l2_decay_step 2500 --l2_weight_end 0.0  --g_loss_decay_begin_step 0 --real_save_path generated_dataset/hulk_ctn
+
+# only GAN
+python main.py -O --text "3D model of hulk, highly detailed" --workspace hulk_ctn_only_gan --ckpt ckpts/hulk_df_ep0200.pth --no_cam_D --gan --ctn --sds_weight_end 0.0 --real_save_path generated_dataset/hulk_ctn
 
 # Edit to red Hulk, change --text
 python main.py -O --text "a red hulk, red skin, highly detailed" --workspace hulk_red_ctn --ckpt ckpts/hulk_df_ep0200.pth --no_cam_D --gan --ctn  --g_loss_decay_begin_step 25000 --real_save_path generated_dataset/hulk_ctn
@@ -158,6 +175,8 @@ Possible hyperparameters you need to change:
 * --real_overwrite: open it to overwrite the real dataset directory
 * --per_view_gt: how many images will be generated for each camera view. Default: 5
 * --img2img_view_num: how many camera views for img2img generation. Default: 64.
+* --gan: Incorporating discriminator (IT3D)
+* --ctn: Useing ControlNet condition on softedge. If false, StableDiffusion Image-to-Image Pipeline will be used. SD I2I is much faster but with lower quality.
 * --depth: depth-conditioned Controlnet
 * --noraml: normal-conditioned Controlnet
 * --strength: strength of Controlnet conditioning
