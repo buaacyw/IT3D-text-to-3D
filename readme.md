@@ -76,8 +76,8 @@ https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/5256c1f8-bcc5-4141-b0
 # Install
 
 ```bash
-git clone https://github.com/buaacyw/IT3D.git
-cd it3d
+git clone https://github.com/buaacyw/IT3D-text-to-3D.git
+cd IT3D-text-to-3D
 conda create -n it3d python==3.8
 conda activate it3d
 pip install -r requirements.txt
