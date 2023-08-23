@@ -4,7 +4,7 @@
 
 Yiwen Chen, Chi Zhang, Xiaofeng Yang, Zhongang Cai, Gang Yu, Lei Yang, Guosheng Lin
 
-[Arxiv]
+[Arxiv](https://arxiv.org/abs/2308.11473)
 
 ## Abstract
 
@@ -204,5 +204,12 @@ Our code is based on these wonderful repos:
 
 If you find this work useful, a citation will be appreciated via:
 ```
-
+  @misc{chen2023it3d,
+        title={IT3D: Improved Text-to-3D Generation with Explicit View Synthesis}, 
+        author={Yiwen Chen and Chi Zhang and Xiaofeng Yang and Zhongang Cai and Gang Yu and Lei Yang and Guosheng Lin},
+        year={2023},
+        eprint={2308.11473},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
+  }
 ```
