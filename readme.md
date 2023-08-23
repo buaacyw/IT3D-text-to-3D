@@ -10,15 +10,12 @@ Yiwen Chen, Chi Zhang, Xiaofeng Yang, Zhongang Cai, Gang Yu, Lei Yang, Guosheng 
 
 Recent strides in Text-to-3D techniques have been propelled by distilling knowledge from powerful large text-to-image diffusion models (LDMs). Nonetheless, existing Text-to-3D approaches often grapple with challenges such as over-saturation, inadequate detailing, and unrealistic outputs. This study presents a novel strategy that leverages explicitly synthesized multi-view images to address these issues. Our approach involves the utilization of image-to-image pipelines, empowered by LDMs, to generate posed high-quality images based on the renderings of coarse 3D models. Although the generated images mostly alleviate the aforementioned issues, challenges such as view inconsistency and significant content variance persist due to the inherent generative nature of large diffusion models, posing extensive difficulties in leveraging these images effectively. To overcome this hurdle, we advocate integrating a discriminator alongside a novel Diffusion-GAN dual training strategy to guide the training of 3D models. For the incorporated discriminator, the synthesized multi-view images are considered real data, while the renderings of the optimized 3D models function as fake data. We conduct a comprehensive set of experiments that demonstrate the effectiveness of our method over baseline approaches.
 
-### Left: Coarse Model (Baseline). Right: Refined Model (Ours). File Name: Prompt
-
-
-
-https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/129b0f63-695b-4dee-9396-b3c8d531c577
 
 
 
 
+
+https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/5256c1f8-bcc5-4141-b071-dee1f8b7d3d3
 
 
 
@@ -28,6 +25,8 @@ https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/129b0f63-695b-4dee-93
 # Demos
 <details close>
   <summary>More Videos</summary>
+
+  ### Left: Coarse Model (Baseline). Right: Refined Model (Ours). File Name: Prompt
 
   https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/5dc67170-c515-4287-b38a-62d15e11c73e
 
