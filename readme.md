@@ -175,7 +175,7 @@ Possible hyperparameters you need to change:
 * --per_view_gt: how many images will be generated for each camera view. Default: 5
 * --img2img_view_num: how many camera views for img2img generation. Default: 64.
 * --gan: Incorporating discriminator (IT3D)
-* --ctn: Useing ControlNet condition on softedge. If false, StableDiffusion Image-to-Image Pipeline will be used. SD I2I is much faster but with lower quality.
+* --ctn: Using ControlNet condition on softedge. If false, StableDiffusion Image-to-Image Pipeline will be used. SD I2I is much faster but with lower quality.
 * --depth: depth-conditioned Controlnet
 * --noraml: normal-conditioned Controlnet
 * --strength: strength of Controlnet conditioning
