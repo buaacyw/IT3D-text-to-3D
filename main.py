@@ -46,7 +46,7 @@ if __name__ == '__main__':
     parser.add_argument('--per_view_gt', type=int, default=5, help="per view real image")
     parser.add_argument('--save_interval', type=int, default=50, help="save interval")
     parser.add_argument('--d_reg_interval', type=int, default=16, help="discriminator regularization")
-    parser.add_argument('--iters', type=int, default=20000, help="total training iters")
+    parser.add_argument('--iters', type=int, default=30000, help="total training iters")
     parser.add_argument('--cam_drop_prob', type=float, default=0.2, help="camera drop rate")
     parser.add_argument('--lr', type=float, default=1e-3, help="max learning rate")
     parser.add_argument('--d_lr', type=float, default=2e-3, help="d learning rate")
@@ -483,7 +483,6 @@ if __name__ == '__main__':
         test_loader = NeRFDataset(opt, device=device, type='test', H=opt.H, W=opt.W,
                                   size=opt.dataset_size_test).dataloader(batch_size=1)
         if opt.gan:
-            max_epoch *= 100
             img2img_loader = NeRFDataset(opt, device=device, type='test', H=512, W=512,
                                       size=opt.img2img_view_num).dataloader(batch_size=1) # img2img at 512 resolution
 
