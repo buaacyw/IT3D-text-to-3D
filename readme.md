@@ -2,7 +2,7 @@
 
 **IT3D: Improved Text-to-3D Generation with Explicit View Synthesis**.
 
-Yiwen Chen, Chi Zhang, Xiaofeng Yang, Zhongang Cai, Gang Yu, Lei Yang, Guosheng Lin
+[Yiwen Chen](https://buaacyw.github.io/), [Chi Zhang](https://icoz69.github.io/), Xiaofeng Yang, [Zhongang Cai](https://caizhongang.github.io/), [Gang Yu](https://www.skicyyu.org/), [Lei Yang](https://scholar.google.com.hk/citations?user=jZH2IPYAAAAJ&hl=en), [Guosheng Lin](https://guosheng.github.io/)
 
 [Arxiv](https://arxiv.org/abs/2308.11473)
 
@@ -76,8 +76,8 @@ https://github.com/buaacyw/IT3D-text-to-3D/assets/52091468/5256c1f8-bcc5-4141-b0
 # Install
 
 ```bash
-git clone https://github.com/buaacyw/IT3D.git
-cd it3d
+git clone https://github.com/buaacyw/IT3D-text-to-3D.git
+cd IT3D-text-to-3D
 conda create -n it3d python==3.8
 conda activate it3d
 pip install -r requirements.txt
@@ -175,7 +175,7 @@ Possible hyperparameters you need to change:
 * --per_view_gt: how many images will be generated for each camera view. Default: 5
 * --img2img_view_num: how many camera views for img2img generation. Default: 64.
 * --gan: Incorporating discriminator (IT3D)
-* --ctn: Useing ControlNet condition on softedge. If false, StableDiffusion Image-to-Image Pipeline will be used. SD I2I is much faster but with lower quality.
+* --ctn: Using ControlNet condition on softedge. If false, StableDiffusion Image-to-Image Pipeline will be used. SD I2I is much faster but with lower quality.
 * --depth: depth-conditioned Controlnet
 * --noraml: normal-conditioned Controlnet
 * --strength: strength of Controlnet conditioning
