@@ -81,7 +81,6 @@ cd IT3D-text-to-3D
 conda create -n it3d python==3.8
 conda activate it3d
 pip install -r requirements.txt
-bash scripts/install_ext.sh
 pip install ./raymarching
 pip install ./shencoder
 pip install ./freqencoder
