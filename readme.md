@@ -82,6 +82,10 @@ conda create -n it3d python==3.8
 conda activate it3d
 pip install -r requirements.txt
 bash scripts/install_ext.sh
+pip install ./raymarching
+pip install ./shencoder
+pip install ./freqencoder
+pip install ./gridencoder
 ```
 ### Wandb Login
 
