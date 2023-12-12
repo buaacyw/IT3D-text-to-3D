@@ -1,6 +1,6 @@
 # Official repo for IT3D
 
-**IT3D: Improved Text-to-3D Generation with Explicit View Synthesis**.
+**IT3D: Improved Text-to-3D Generation with Explicit View Synthesis (AAAI 2024)**.
 
 [Yiwen Chen](https://buaacyw.github.io/), [Chi Zhang](https://icoz69.github.io/), Xiaofeng Yang, [Zhongang Cai](https://caizhongang.github.io/), [Gang Yu](https://www.skicyyu.org/), [Lei Yang](https://scholar.google.com.hk/citations?user=jZH2IPYAAAAJ&hl=en), [Guosheng Lin](https://guosheng.github.io/)
 
