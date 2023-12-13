@@ -1,4 +1,4 @@
-# Official repo for IT3D
+# Official repo for IT3D (AAAI 2024)
 
 **IT3D: Improved Text-to-3D Generation with Explicit View Synthesis (AAAI 2024)**.
 
